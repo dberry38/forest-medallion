@@ -19,7 +19,7 @@ const Nav = (props) => {
                     <span onClick={() => setCurrentPage(Page)}>
                         {Page.name}
                     </span>
-                </li>
+                </li> 
             ))}
         </ul>
     </nav>
