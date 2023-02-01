@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Nav from "./components/Nav";
 import Page from "./components/Page";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [pages] = useState([
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <Header>
+      <Header title="testing header">
         <Nav 
           pages = {pages}
           setCurrentPage = {setCurrentPage}
@@ -26,7 +26,7 @@ function App() {
       <main>
         <Page currentPage = {currentPage}></Page>
       </main>
-      <Footer />
+      <Footer note="this is a footer" />
     </div>
   );
 }

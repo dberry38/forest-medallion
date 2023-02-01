@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutDiv() {
+function AboutDiv(props) {
     return (
         <div>
             <hi>About Me And My Coding Skills Or Lack Thereof</hi>
