@@ -1,29 +1,31 @@
 import React, { useEffect } from 'react'
 
 const Nav = (props) => {
-    const {
-        pages = [],
-        setCurrentPage,
-        currentPage,
-    } = props;
+        const {
+            pages,
+            setCurrentPage,
+            currentPage,
+        } = props;
 
-    useEffect(() => {
-        document.title = currentPage.name;
-    }, [currentPage])
-
-  return (
-    <nav>
-        <ul>
-            {pages.map((Page) => (
-                <li className={`${currentPage.name === Page.name && 'navActive'}`} key={Page.name}>
-                    <span onClick={() => setCurrentPage(Page)}>
-                        {Page.name}
-                    </span>
-                </li> 
-            ))}
-        </ul>
-    </nav>
-  )
+        useEffect(() => {
+            document.title = currentPage.name;
+        }, [currentPage])
+    console.log(pages)
+      return (
+        <nav>
+            <h2>heklo</h2>
+            <ul>
+                {pages.map((Page) => (
+                    <li className={`${currentPage.name === Page.name && 'navActive'}`} key={Page.name}>
+                        <span onClick={() => setCurrentPage(Page)}>
+                            {Page.name}
+                        </span>
+                    </li> 
+                ))}
+            </ul>
+        </nav>
+      )
+    
 }
 
 export default Nav
