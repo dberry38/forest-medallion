@@ -1,5 +1,15 @@
 import React, { useEffect } from 'react'
-import { css } from '@emotion/react';
+import { css } from '@emotion/css';
+
+const listStyle = `
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 12rem;
+max-width: 700px;
+min-width: 300px;
+cursor: pointer;
+`
 
 const Nav = (props) => {
         const {
@@ -14,16 +24,15 @@ const Nav = (props) => {
     console.log(pages)
       return (
         <nav>
-            <h2>heklo</h2>
-            <ul>
+            <div className={css(listStyle)}>
                 {pages.map((Page) => (
-                    <li className={`${currentPage.name === Page.name && 'navActive'}`} key={Page.name}>
+                    <p className={`${currentPage.name === Page.name && 'navActive'}`} key={Page.name}>
                         <span onClick={() => setCurrentPage(Page)}>
                             {Page.name}
                         </span>
-                    </li> 
+                    </p> 
                 ))}
-            </ul>
+            </div>
         </nav>
       )
     
