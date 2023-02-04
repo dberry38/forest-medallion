@@ -56,7 +56,7 @@ function App() {
       <main>
         <Page currentPage = {currentPage}></Page>
       </main>
-      <Footer note="this is a footer" />
+      <Footer/>
     </div>
   );
 }
