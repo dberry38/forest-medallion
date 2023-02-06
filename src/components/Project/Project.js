@@ -1,35 +1,57 @@
 import React from "react";
-import { css } from '@emotion/css';
+import { css } from "@emotion/css";
 
 // TODO STYLING
-const cardStyle = `
+
+function ProjectDiv({ title, Github, liveLink, image }) {
+  const cardStyle = `
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 margin: auto;
-margin-bottom: 5rem;
+margin-bottom: 2rem;
 padding: 10rem 10rem;
-width: 100rem;
+max-width: 100rem;
+min-width: 25rem;
 height: 25rem;
-`
+background-image: url(${image});
+background-repeat: no-repeat;
+background-size: contain;
+`;
 
-
-function ProjectDiv({ title, Github, liveLink, image}) {
-    return (
-            {/* Projects will be iterated through with the map method to display cards of my projects */},
-            {/* or no, this will just be the template that Portfolio uses by passing the projects array info into the Project component when we map through. */},
-
-            <div style={{background: `url(${image})`}} className={css(cardStyle)}>
-                {/* <h1>{title}</h1> */}
-                <a href={Github} target="_blank" rel="noopener noreferrer">{Github}</a>
-                <br></br>
-                <a href={liveLink} target="_blank" rel="noopener noreferrer">{liveLink}</a>
-            </div>
+  const linkStyle = `
+font-size: 2rem;
+background-color: rgb(204, 182, 34, 0.7);
+border-radius: 50px;
+padding: 0 15px;
+position: relative;
+bottom: 15rem;
+`;
+  return (
+    (
+      <div className={css(cardStyle)}>
+        <a
+          href={Github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={css(linkStyle)}
+        >
+          {Github}
+        </a>
+        <br></br>
+        <a
+          href={liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={css(linkStyle)}
+        >
+          {liveLink}
+        </a>
+      </div>
     )
+  );
 }
-
-
 
 export default ProjectDiv;
