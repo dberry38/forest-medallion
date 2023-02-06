@@ -2,9 +2,7 @@ import React from "react";
 import ProjectDiv from "../Project/Project";
 import { projectArray } from "./projectArray";
 
-
 // TODO STYLING
-
 
 function PortfolioDiv(props) {
   return (
@@ -13,6 +11,7 @@ function PortfolioDiv(props) {
         {projectArray.map((project) => {
           return (
             <ProjectDiv
+              key={project.key}
               title={project.title}
               Github={project.Github}
               liveLink={project.liveLink}
