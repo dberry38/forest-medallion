@@ -23,6 +23,8 @@ background-size: contain;
 
   const linkStyle = `
 font-size: 2rem;
+width: 30rem;
+text-align: center;
 background-color: rgb(204, 182, 34, 0.7);
 border-radius: 50px;
 padding: 0 15px;
@@ -38,7 +40,7 @@ bottom: 15rem;
           rel="noopener noreferrer"
           className={css(linkStyle)}
         >
-          {Github}
+          Github Repository
         </a>
         <br></br>
         <a
@@ -47,7 +49,7 @@ bottom: 15rem;
           rel="noopener noreferrer"
           className={css(linkStyle)}
         >
-          {liveLink}
+          {title}
         </a>
       </div>
     )
