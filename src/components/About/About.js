@@ -5,7 +5,7 @@ const color = 'white';
 
 const h1Style = `
 padding: 32px;
-background-color: hotpink;
+background-color: #397045;
 font-size: 24px;
 border-radius: 30px;
 &:hover {
