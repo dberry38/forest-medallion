@@ -24,7 +24,6 @@ const Nav = (props) => {
         useEffect(() => {
             document.title = currentPage.name;
         }, [currentPage])
-    console.log(pages)
       return (
         <nav>
             <div className={css(listStyle)}>
