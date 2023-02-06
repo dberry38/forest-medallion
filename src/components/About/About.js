@@ -6,7 +6,7 @@ import mtPic from '../../assets/Images/mountain_pic.jpg'
 const h1Style = `
 display: flex;
 position: relative;
-bottom: 22rem;
+bottom: 20rem;
 width: 50rem;
 align-items: center;
 justify-content: center;
@@ -37,7 +37,7 @@ flex-direction: column;
 const subStyle = `
 display: flex;
 position: relative;
-bottom: 22rem;
+bottom: 20rem;
 background-color: rgb(200, 150, 0, 0.5);
 font-size: 1.25rem;
 line-height: 1.125rem;
@@ -51,7 +51,7 @@ width: 30rem;
 bottom: 20rem;
 background-color: rgb(200, 150, 0, 0.5);
 font-size: 1.25rem;
-line-height: 1.125rem;
+line-height: 1.5rem;
 `
 
 const listStyle = `
@@ -63,7 +63,7 @@ width: 30rem;
 bottom: 20rem;
 background-color: rgb(200, 150, 0, 0.5);
 font-size: 1.25rem;
-line-height: 1.125rem;
+line-height: 1.5rem;
 `
 
 
@@ -77,6 +77,7 @@ function AboutDiv(props) {
                 <li>Building a web page with basic HTML, CSS and Javacsript</li>
                 <li>Organizing databases, classes and asociations</li>
                 <li>Constructing custom APIs and making fetch requests</li>
+                <li>Building a responsive React app</li>
                 <li>Research using Google, Stack Overflow, Github</li>
             </ul>
         </div>
