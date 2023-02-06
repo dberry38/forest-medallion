@@ -6,12 +6,11 @@ top: 0;
 left: 0;
 width: 100%;
 text-align: center;
-background-color: purple;
+background-color: #397045;
 color: white;
 `
 
 const otherStyle = `
-background-color: red;
 color: white;
 &:hover {
   color: black;
