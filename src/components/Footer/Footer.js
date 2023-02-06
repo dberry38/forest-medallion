@@ -1,11 +1,14 @@
 import React from "react";
 import { css } from '@emotion/css';
+import mtPic from '../../assets/Images/mountain_pic.jpg'
 
 const h1Style = `
 display: flex;
 align-items: center;
 justify-content: center;
 font-size: 6px;
+margin-top: 5rem;
+background-image: url${mtPic};
 `
 const linkStyle = `
 text-decoration: none;

@@ -3,6 +3,14 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Nav";
 import Page from "./components/Page";
 import Footer from "./components/Footer/Footer";
+import { css } from '@emotion/css';
+
+const mainStyle = `
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+`
 
 function App() {
   const [pages] = useState([
@@ -14,23 +22,6 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState(pages[0])
 
-  // const [toggle, setToggle] = useState(false) ---- toggle button demo
-
-  // var arr = [ ------------- array mapping demo
-  //   {
-  //     name: "peter",
-  //     game: "FNSM",
-  //   },
-  //   {
-  //     name: "reed",
-  //     game: "stretchy man",
-  //   },
-  //   {
-  //     name: "johnny",
-  //     game: "flameboy",
-  //   },
-  // ]
-
   return (
     <div>
       <Header title="testing header">
@@ -40,20 +31,7 @@ function App() {
           currentPage = {currentPage}
         ></Nav>
       </Header>
-
-      {/* <button onClick={()=> {setToggle(!toggle)}} style={toggle ? {backgroundColor: "blue"} : {backgroundColor: "red"}}>{toggle ? "log-out" : "log in"}</button> */}
-      {/* toggle demo */}
-
-{/* {arr.map(element => {
-  return ( <div>
-    <h1>{element.name}</h1>
-    <h2>{element.game}</h2>
-    </div>
-  )
-})} */}
-{/* map rendering demo */}
-
-      <main>
+      <main className={css(mainStyle)}>
         <Page currentPage = {currentPage}></Page>
       </main>
       <Footer/>

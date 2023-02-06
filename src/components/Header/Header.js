@@ -8,13 +8,12 @@ width: 100%;
 text-align: center;
 background-color: #397045;
 color: white;
+font-size: 1.25rem;
 `
 
 const otherStyle = `
 color: white;
-&:hover {
-  color: black;
-}
+font-size: 2.38rem;
 `
 
 export default function Header(props) {
