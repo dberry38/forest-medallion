@@ -1,8 +1,16 @@
 import React from 'react';
+import { css } from '@emotion/css';
+
+const contactStyle = `
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`
 
 function ContactDiv(props) {
     return (
-        <div>
+        <div className={css(contactStyle)}>
             <h1>Find me on:</h1>
             <a href="https://github.com/dberry38">Github</a>
             <br></br>

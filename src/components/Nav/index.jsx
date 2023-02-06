@@ -3,11 +3,10 @@ import { css } from '@emotion/css';
 
 const listStyle = `
 display: flex;
+flex-direction: row;
 align-items: center;
-justify-content: space-between;
-padding: 0 12rem;
-max-width: 700px;
-min-width: 300px;
+justify-content: space-around;
+padding: 0.5rem 18rem;
 cursor: pointer;
 `
 
