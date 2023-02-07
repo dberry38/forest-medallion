@@ -1,48 +1,49 @@
 import React from "react";
 import { css } from "@emotion/css";
 
-// TODO STYLING
-
 function ProjectDiv({ title, Github, liveLink, image }) {
+  // styling had to be inside the function to use props for image
+
+// getting stuck on styling here, cant get things to stay centered
   const cardStyle = `
 display: flex;
+width: 80vw;
 flex-direction: column;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 margin: auto;
 margin-bottom: 2rem;
-padding: 10rem 10rem;
-max-width: 100rem;
-min-width: 25rem;
-height: 25rem;
+padding: 1rem 1rem;
+height: 15vh;
 background-image: url(${image});
 background-repeat: no-repeat;
 background-size: contain;
+
+@media ONLY screen AND (min-width: 1100px) {
+flex-direction: row;
+}
 `;
 
   const linkStyle = `
-font-size: 2rem;
-width: 30rem;
+flex-direction: row;
+font-size: calc(2px + 2vw);
+width: 25vw;
 text-align: center;
 background-color: rgb(204, 182, 34, 0.7);
 border-radius: 50px;
-padding: 0 15px;
-position: relative;
-bottom: 15rem;
+padding: 5px 15px;
+}
 `;
+
+  const repoLink = `
+font-size: calc(2px + 2vw);
+width: 20vw;
+`;
+
   return (
-    (
+    
       <div className={css(cardStyle)}>
-        <a
-          href={Github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css(linkStyle)}
-        >
-          Github Repository
-        </a>
-        <br></br>
         <a
           href={liveLink}
           target="_blank"
@@ -51,8 +52,15 @@ bottom: 15rem;
         >
           {title}
         </a>
-      </div>
-    )
+        <a
+          href={Github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={css(linkStyle, repoLink)}
+        >
+          Github Repository
+        </a>
+        </div>
   );
 }
 
