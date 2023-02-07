@@ -9,6 +9,10 @@ text-align: center;
 background-color: #397045;
 color: white;
 font-size: 1.25rem;
+position: sticky;
+z-index: 1;
+padding-top: 0.001rem;
+line-height: 0.5;
 `
 
 const otherStyle = `

@@ -7,11 +7,11 @@ const h1Style = `
 display: flex;
 position: relative;
 bottom: 20rem;
-width: 50rem;
+width: 50vw;
 align-items: center;
 justify-content: center;
 padding: 32px;
-background-color: #397045;
+background-color: rgb(213, 179, 70);
 font-size: 24px;
 border-radius: 30px;
 color: white;
@@ -23,7 +23,7 @@ align-items: center;
 justify-content: center;
 position: relative;
 top: 5rem;
-width: 60rem;
+width: 92vw;
 height: 60rem;
 background-image: url(${mtPic});
 background-color: rgb(150, 160, 140);
@@ -38,9 +38,9 @@ const subStyle = `
 display: flex;
 position: relative;
 bottom: 20rem;
-background-color: rgb(200, 150, 0, 0.5);
+background-color: rgb(0, 100, 200);
 font-size: 1.25rem;
-line-height: 1.125rem;
+line-height: 1.5rem;
 `
 
 const contentStyle = `
@@ -49,8 +49,9 @@ position: relative;
 text-align: center;
 width: 30rem;
 bottom: 20rem;
-background-color: rgb(200, 150, 0, 0.5);
+color: rgb(0, 0, 0);
 font-size: 1.25rem;
+font-weight: 500;
 line-height: 1.5rem;
 `
 
@@ -61,9 +62,9 @@ position: relative;
 text-align: center;
 width: 30rem;
 bottom: 20rem;
-background-color: rgb(200, 150, 0, 0.5);
+background-color: rgb(0, 100, 50, 0.5);
 font-size: 1.25rem;
-line-height: 1.5rem;
+line-height: 1.8rem;
 `
 
 

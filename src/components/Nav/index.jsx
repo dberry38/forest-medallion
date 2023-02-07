@@ -6,7 +6,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-around;
-padding: 0.5rem 10rem;
+padding: 0rem 10rem;
 cursor: pointer;
 `
 
