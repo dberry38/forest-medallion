@@ -76,7 +76,7 @@ function AboutDiv(props) {
             <p className={css(contentStyle)}>Starting in October 2022, I entered the Full Stack Coding Bootcamp provided by UW and Trinity. I have acquired many new skills, including:</p>
             <ul className={css(listStyle)}>
                 <li>Building a web page with basic HTML, CSS and Javacsript</li>
-                <li>Organizing databases, classes and asociations</li>
+                <li>Organizing databases, classes and associations</li>
                 <li>Constructing custom APIs and making fetch requests</li>
                 <li>Building a responsive React app</li>
                 <li>Research using Google, Stack Overflow, Github</li>
