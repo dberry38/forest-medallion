@@ -1,6 +1,7 @@
 
-import demoP2 from '../../assets/Images/Proj2-demo-shot.png'
 import demoP1 from '../../assets/Images/Proj1-demo.png'
+import demoP2 from '../../assets/Images/Proj2-demo-shot.png'
+import demoP3 from '../../assets/Images/Proj3-demo.png'
 
 export const projectArray = [
     {
@@ -16,5 +17,12 @@ export const projectArray = [
         Github: "https://github.com/dberry38/boundless",
         liveLink: "https://boundless-stories.herokuapp.com/",
         image: `${demoP2}`,
+    },
+    {
+        key: "3",
+        title: "Didactic Lift",
+        Github: "https://github.com/206Dorian/Didactic-Lift",
+        liveLink: "http://didactic-lift.herokuapp.com//",
+        image: `${demoP3}`,
     },
 ];
