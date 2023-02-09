@@ -7,7 +7,7 @@ A Developer Portfolio built with React and deployed to Github Pages.
 To show off my style and try to get a job in the tech world!
 
 ## Screenshots
-![portfolio screenshot](./src/assets/Images/portfolio-screenshot.png)
+![portfolio screenshot](./src/assets/Images/wide-about.png)
 
 ## Live URL
 [Check it out](https://dberry38.github.io/forest-medallion/)
@@ -17,8 +17,6 @@ This is only the beginning, check in for regular updates!
 
 ### *In the works:*
 - Responsive styling
-- About page
-- Resume
 
 ## Credits
 The awesome folks at AskBCS and the bootcamp tutors who helped me get this thing functional.
