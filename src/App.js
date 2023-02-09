@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav";
 import Page from "./components/Page";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer/Footer";
 import { css } from '@emotion/css';
 
