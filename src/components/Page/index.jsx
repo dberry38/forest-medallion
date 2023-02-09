@@ -23,7 +23,6 @@ const Page = ({currentPage}) => {
 
   return (
     <section>
-        <h2>{currentPage.name}</h2>
         <PageContents>{renderPage()}</PageContents>
     </section>
   )
