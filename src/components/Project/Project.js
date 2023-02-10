@@ -4,7 +4,7 @@ import { css } from "@emotion/css";
 function ProjectDiv({ title, Github, liveLink, image }) {
   // styling had to be inside the function to use props for image
 
-// getting stuck on styling here, cant get things to stay centered
+  // getting stuck on styling here, cant get things to stay centered
   const cardStyle = `
 display: flex;
 width: 80vw;
@@ -42,25 +42,25 @@ width: 20vw;
 `;
 
   return (
-    
-      <div className={css(cardStyle)}>
-        <a
-          href={liveLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css(linkStyle)}
-        >
-          {title}
-        </a>
-        <a
-          href={Github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css(linkStyle, repoLink)}
-        >
-          Github Repository
-        </a>
-        </div>
+    <div>
+      <div className={css(cardStyle)}></div>
+      <a
+        href={liveLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={css(linkStyle)}
+      >
+        {title}
+      </a>
+      <a
+        href={Github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={css(linkStyle, repoLink)}
+      >
+        Github Repository
+      </a>
+    </div>
   );
 }
 

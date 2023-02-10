@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+    width: 92vw;
+    height: 60rem;
+    background-image: url("../../assets/Images/mountain_pic.jpg");
+    background-color: rgb(150, 160, 140);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5%;
+    flex-direction: column;
+
+}
+
+.container h1 {
+    display: flex;
+position: relative;
+bottom: 12rem;
+width: 50vw;
+align-items: center;
+justify-content: center;
+padding: 32px;
+background-color: rgb(213, 179, 70);
+font-size: calc(0.55rem + 2vw);
+border-radius: 30px;
+color: white;
+}
+
+.container h3 {
+    display: flex;
+position: relative;
+bottom: 14rem;
+background-color: rgb(68, 148, 229);
+font-size: calc(0.35rem + 2vw);
+line-height: 2.5rem;
+}
+
+.summary {
+    display: flex;
+position: relative;
+text-align: center;
+width: 30rem;
+bottom: 14rem;
+color: rgb(0, 0, 0);
+font-size: calc(0.35rem + 2vw);
+font-weight: 500;
+line-height: 1.5rem;
+}
+
+.skill-list {
+    display: flex;
+flex-direction: column;
+position: relative;
+text-align: center;
+width: 30rem;
+bottom: 16rem;
+background-color: rgb(0, 100, 50, 0.5);
+font-size: calc(0.2rem + 2vw);
+line-height: 1.8rem;
+}

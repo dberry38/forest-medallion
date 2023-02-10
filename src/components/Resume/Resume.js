@@ -10,21 +10,18 @@ function ResumeDiv(props) {
         <div>
           <h2>Career Summary</h2>
           <p>
-            I have spent many years working in the construction industry, and I
-            am excited to apply the skills and work ethic I have cultivated to a
-            new field. Becoming a Web Developer will open my horizons to new
-            possibilities.
+            Full Stack Web Development Coding Bootcamp graduate making the move into a new career.
           </p>
         </div>
         <div>
           <h2>Education</h2>
           <ul>
             <li>
-              High School Diploma from Fife High School, Graduate of Class 2010
-            </li>
-            <li>
               Full Stack Web Developer Certificate from University of
               Washington, 2023
+            </li>
+            <li>
+              High School Diploma from Fife High School, Graduate of Class 2010
             </li>
           </ul>
           <h2>Skills</h2>
@@ -33,7 +30,7 @@ function ResumeDiv(props) {
             <li>Making said website into a Progressive Web Application</li>
             <li>Constructing and managing databases</li>
             <li>Utilizing APIs and libraries</li>
-            <li>READING DOCUMENTATION</li>
+            <li>Reading and comprehending documentation</li>
           </ul>
         </div>
       </div>

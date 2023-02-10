@@ -6,10 +6,11 @@ import Footer from "./components/Footer/Footer";
 import { css } from '@emotion/css';
 
 const mainStyle = `
-margin: 0;
+margin: 0 auto;
 display: flex;
 align-items: center;
 justify-content: center;
+width: 90vw;
 `
 
 function App() {
